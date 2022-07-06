@@ -1,5 +1,5 @@
 basic.forever(function () {
-    if (input.acceleration(Dimension.Y) > 800) {
+    if (input.acceleration(Dimension.Y) <= 800) {
         basic.showLeds(`
             # . . . #
             . # . # .
@@ -7,7 +7,7 @@ basic.forever(function () {
             . # . # .
             # . . . #
             `)
-    } else if (input.acceleration(Dimension.Y) < 800) {
+    } else if (input.acceleration(Dimension.Y) > 800) {
         basic.showIcon(IconNames.Yes)
     }
 })
