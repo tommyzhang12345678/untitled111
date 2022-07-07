@@ -16,7 +16,7 @@ basic.forever(function () {
     } else if (input.acceleration(Dimension.Y) > 800) {
         basic.showIcon(IconNames.Yes)
     }
-    if (voilume <= 300) {
+    if (voilume >= 300) {
         voilume = 50
     }
 })
